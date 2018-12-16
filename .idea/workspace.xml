@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="463ecf7f-ecf4-4600-a9c6-53c5237f8330" name="Default" comment="" />
+    <list default="true" id="463ecf7f-ecf4-4600-a9c6-53c5237f8330" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <ignored path="springmvc.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,8 +29,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="464">
-                <caret line="265" column="29" lean-forward="true" selection-start-line="265" selection-start-column="29" selection-end-line="265" selection-end-column="29" />
+              <first_editor relative-caret-position="304">
+                <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -66,6 +69,9 @@
         <option value="Jsp File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -147,12 +153,13 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="357" />
     <option name="y" value="546" />
     <option name="width" value="2163" />
     <option name="height" value="833" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -844,10 +851,10 @@
       <window_info id="Palette&#9;" order="10" />
       <window_info id="Image Layers" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.88688946" weight="0.2729805" />
       <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4922879" weight="0.32729805" />
-      <window_info content_ui="combo" id="Project" order="4" weight="0.27234343" />
+      <window_info content_ui="combo" id="Project" order="4" visible="true" weight="0.27234343" />
       <window_info anchor="right" id="Theme Preview" order="2" />
       <window_info id="Favorites" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="11" weight="0.3286908" />
@@ -866,49 +873,6 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="right" id="Dynamic Properties" order="10" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Web" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="11" weight="0.3286908" />
-      <window_info anchor="right" id="Designer" order="6" />
-      <window_info anchor="right" id="Palette" order="8" />
-      <window_info id="JRebel" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Spring" order="16" />
-      <window_info id="Image Layers" order="0" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.88688946" weight="0.2729805" />
-      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
-      <window_info id="DB Browser" order="2" />
-      <window_info id="UI Designer" order="6" />
-      <window_info id="Project Explorer" order="1" />
-      <window_info id="Favorites" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="14" sideWeight="0.4922879" weight="0.32729805" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.11311054" side_tool="true" weight="0.38664812" />
-      <window_info anchor="bottom" id="Messages" order="17" weight="0.32729805" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Jelastic" order="0" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info id="Job Explorer" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
-      <window_info anchor="right" id="Code Iris" order="1" />
-      <window_info id="Structure" order="5" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.3286908" />
-      <window_info anchor="bottom" id="JRebel Executor" order="15" />
-      <window_info active="true" content_ui="combo" id="Project" order="4" visible="true" weight="0.27234343" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="TODO" order="9" />
-      <window_info id="Palette&#9;" order="10" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Dynamic Properties" order="10" />
-      <window_info anchor="bottom" id="Console" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="13" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="6" sideWeight="0.4974293" weight="0.3593315" />
-      <window_info anchor="bottom" id="DB Execution Console" order="4" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1165,8 +1129,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="464">
-            <caret line="265" column="29" lean-forward="true" selection-start-line="265" selection-start-column="29" selection-end-line="265" selection-end-column="29" />
+          <first_editor relative-caret-position="304">
+            <caret line="250" column="18" selection-start-line="250" selection-start-column="18" selection-end-line="250" selection-end-column="18" />
           </first_editor>
           <second_editor />
         </state>

@@ -1,5 +1,6 @@
-##SpringMVC数据绑定
-###绑定基本数据类型
+# SpringMVC数据绑定   
+
+## 绑定基本数据类型           
 Java基本数据类型int的默认值是0，在使用int进行url传递参数时，参数key是必须写的，其值也只能是int类型的，否则将会报错。  
 比如方法：   
 
@@ -30,7 +31,7 @@ byte,short,int的默认值都为0，long的默认值为0L,float的默认值为0.
 在进行数据绑定时，其参数值必传，其值的类型为其对应的基本数据类型。
 
 
-###绑定封装数据类型
+## 绑定封装数据类型     
 Java封装类型Integer的默认值为null，在使用Integer进行url数据传递时，参数key可以不传，对应参数的值就会默认为null。
 比如方法：   
 
@@ -49,7 +50,7 @@ Java封装类型Integer的默认值为null，在使用Integer进行url数据传�
  2、包装类型则可以接受空值，具有优势，推荐使用，比如传递的参数是年龄、身高、长度、宽度等，具体情况可根据业务需要进行变更。    
 
 
-###绑定数组类型
+## 绑定数组类型    
 Java数组：它是一个具有相同数据类型，固定大小的对象。     
 绑定数组类型的方法如下：
     
@@ -67,7 +68,7 @@ Java数组：它是一个具有相同数据类型，固定大小的对象。
 http://localhost:8080/array.do?name=Tom&name=Lucy&name=Jim   
 
 
-###绑定对象类型
+## 绑定对象类型    
 这里以绑定User对象为例，绑定的方法如下：    
 
     @RequestMapping(value="/user")   
@@ -84,7 +85,7 @@ http://localhost:8080/user?name=Tom&age=10
 但如果是想对对象中对象的属性再赋值的话，则需要使用xxx.xxx的形式，如下的contactInfo.phone表示将User类中的ContactInfo类的phone属性赋值。 如下：   
 http://localhost:8080/object.do?name=Tom&age=10&contactInfo.phone=10086         
 
-###两个对象同属性进行数据绑定
+## 两个对象同属性进行数据绑定    
 这里以User对象和Admin对象为例，这两个对象具有相同的属性name，age，这两个对象进行数据绑定的方法如下：    
 
     @RequestMapping(value = "object.do")   
@@ -113,7 +114,7 @@ http://localhost:8080/object.do?user.name=Tom&admin.name=Lucy&age=10
 其中age参数是两个对象共用的。
     
 
-###绑定List对象
+## 绑定List对象    
 Java中List集合类型：List是一个有序，可重复的的线性表。    
 在绑定List对象数据时，首先要将对象封装为List对象，并设置它的get/set方法，以User对象为例，封装如下：     
 private List<User> users;      
@@ -130,7 +131,7 @@ http://localhost:8080/list.do?users[0].name=Tom&users[1].name=Lucy
 Controller中List参数不能直接传值，需要一个包裹类，类中有需要传的List作为属性和对应的get,set方法。 传值时用users[0].name = Tom    users[1].name = Luce 一定不要跳跃传值，如users[0].name = Tom&users[20].name = Lucy 这样中间的1~19也会占用资源属性值为空。   
 http://localhost:8080/list.do?users[0].name=Tom&users[1].name=Lucy&users[20].name=Jim   
 
-###绑定Map对象
+## 绑定Map对象   
 Java中Map集合对象：Map是一个基于kay-value键值对的集合类型，它是无序的，其中键key不可重复，值value可以重复。    
 在绑定Map对象数据时，首先要将对象封装为Map对象，并设置它的get/set方法，以User对象为例，封装如下：    
  
@@ -148,7 +149,7 @@ Java中Map集合对象：Map是一个基于kay-value键值对的集合类型，�
  其中X,Y是key，类型是String类型。
 
 
-###绑定Set对象
+## 绑定Set对象      
 Java中Set集合对象：Set集合无序，且不可重复，因为它重写了hashCode()方法和equals()方法；   
 Set集合在实际的应用中，常用于对象的重复判断或者排除重复。   
 在SpringMVC中绑定Set数据类型，接口的参数形式和绑定list是类似的，都是通过索引。但是不同的在于，Set必须初始化，它必须先包含了初始化对象，也即是说必须提前手动分配好空间，才能进行赋值，而使用List则没有这个要求。   
@@ -180,7 +181,7 @@ http://localhost:8080/set.do?users[0].name=Tom&users[1].name=Lucy
 http://localhost:8080/set.do?users[0].name=Tom&users[20].name=Lucy   将会报错。   
  
 
-###绑定XML对象
+## 绑定XML对象    
 Java绑定XML对象：XML是一种扩展标记语言，常用来存储或传输数据。   
 对于xml类型的数据绑定，需要在方法形参上增加注解 @RequestBody，并且在Post请求时请求头为Content-Type: application/xml。   
 这样SpringMVC就会调用对应的解析器去解析，所以我们同时还需要在pom中添加xml解析的相关依赖 spring-oxm ，如下：    
@@ -243,7 +244,7 @@ url请求地址为：
 http://localhost:8080/xml.do, 请求头为Content-Type: application/xml.   
 
 
-###绑定Json对象
+## 绑定Json对象    
 Java绑定Json对象：JSON 是轻量级的文本数据交换格式,常用于存储和交换文本信息。     
 SpringMVC接受http中body的json格式内容为参数，在方法的形参前加上注解 @RequestBody，用以调用解析器进行转换，值得注意的是：    
 1、在参数中加注解@RequestBody（ @RequestBody User user）。@RequestBody是把传过来的Json数据反序列化绑定到控制器参数上。    
